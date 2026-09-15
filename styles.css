@@ -349,6 +349,47 @@ img {
     transition: color 0.2s ease;
 }
 
+/* --- EXPERIENCE --- */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+}
+
+.experience-content h3 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.experience-role {
+    margin-top: 6px;
+    color: var(--accent);
+    font-size: 13px;
+}
+
+.experience-content > p:last-child {
+    max-width: 650px;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
 
 
 /* --- MEDIA QUERIES --- */
