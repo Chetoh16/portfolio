@@ -38,9 +38,11 @@ filterButtons.forEach(button => {
 
         filterButtons.forEach(button => {
             button.classList.remove("active");
+            button.setAttribute("aria-pressed", "false");
         });
 
         button.classList.add("active");
+        button.setAttribute("aria-pressed", "true");
 
         applyFilters();
     });

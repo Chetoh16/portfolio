@@ -90,12 +90,12 @@
             </div>
 
             <div class="project-filters">
-                <button class="filter-button active" data-filter-type="all">All</button>
-                <button class="filter-button" data-filter-type="university">University</button>
-                <button class="filter-button" data-filter-type="personal">Personal</button>
-                <button class="filter-button" data-filter-type="ai">AI</button>
+                <button class="filter-button active" data-filter-type="all" aria-pressed="true">All</button>
+                <button class="filter-button" data-filter-type="university" aria-pressed="false">University</button>
+                <button class="filter-button" data-filter-type="personal" aria-pressed="false">Personal</button>
+                <button class="filter-button" data-filter-type="ai" aria-pressed="false">AI</button>
 
-                <span class="project-count"></span>
+                <span class="project-count" aria-live="polite"></span>
             </div>
 
             <div class="project-grid">
