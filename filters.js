@@ -18,4 +18,17 @@ function filterByType(type) {
     });
 }
 
-filterByType("university");
+function filterByLanguage(language) {
+    projectCards.forEach(card => {
+        const cardLanguage = card.dataset.language;
+
+        if (language === "all" || cardLanguage === language) {
+            card.hidden = false;
+        } else {
+            card.hidden = true;
+        }
+    });
+}
+
+filterByLanguage("react");
+
