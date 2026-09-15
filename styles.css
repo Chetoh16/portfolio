@@ -222,6 +222,31 @@ img {
 
 
 
+/* --- MEDIA QUERIES --- */
+
+/* 
+    Mobile layout for the hero section. When the screen width is less than 860px, 
+    the hero layout switches to a single-column layout, with the profile image on top and the text content below. 
+*/
+
+@media (max-width: 860px) {
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .hero-profile {
+        justify-content: flex-start;
+    }
+
+    .profile-frame {
+        width: 240px;
+        height: 300px;
+    }
+
+}
+
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
 .bg-black {
