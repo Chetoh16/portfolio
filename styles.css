@@ -60,6 +60,61 @@ img {
     max-width: 100%;
 }
 
+.wrap {
+    width: 100%;
+    max-width: var(--max);
+
+    /* When the viewport is wider than max-width, 
+    the remaining space is split between the left and right margins, centering the container */
+    margin: 0 auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 57px;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: var(--max);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
 
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
