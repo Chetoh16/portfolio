@@ -115,6 +115,35 @@ img {
     color: var(--accent);
 }
 
+.hero {
+    min-height: calc(100vh - 57px);
+    display: flex;
+    align-items: center;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 80px;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-frame {
+    width: 300px;
+    height: 380px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+}
+
 
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
