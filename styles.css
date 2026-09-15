@@ -225,12 +225,14 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     border-bottom: 1px solid var(--line);
     padding-bottom: 16px;
 }
 
 .sect-title-row h2 {
+    margin-top: 30px;
     font-size: 32px;
     line-height: 1;
     letter-spacing: -0.03em;
@@ -429,12 +431,38 @@ img {
 
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
+.section {
+    padding: 100px 0;
+}
+
 .bg-black {
-    background-color: var(--ink);
+    background: var(--ink);
     color: var(--text);
 }
 
 .bg-white {
-    background-color: #ffffff;
-    color: #08080a;
+    background: #f4f4f1;
+    color: var(--ink);
+}
+
+/* --- WHITE BACKGROUND OVERRIDES --- */
+.bg-white .sect-title-row  {
+    border-color: #d1d1d1;
+}
+
+.bg-white .sect-index {
+    color: #666;
+}
+
+.bg-white .experience-card {
+    border-color: #d1d1d1;
+}
+
+.bg-white .experience-meta,
+.bg-white .experience-content > p:last-child {
+    color: #666;
+}
+
+.bg-white .project-card h3{
+    color: var(--text);
 }
