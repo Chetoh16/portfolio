@@ -354,8 +354,11 @@ img {
 /* --- MEDIA QUERIES --- */
 
 /* 
-    Mobile layout for the hero section. When the screen width is less than 860px, 
-    the hero layout switches to a single-column layout, with the profile image on top and the text content below. 
+    Mobile layout. 
+    When the screen width is less than 860px, 
+    - the hero layout switches to a single-column layout, with the profile image on top and the text content below. 
+    - the project grid switches to a single-column layout, with each project card taking up the full width of the container.
+
 */
 
 @media (max-width: 860px) {
@@ -372,6 +375,14 @@ img {
     .profile-frame {
         width: 240px;
         height: 300px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-visual {
+        min-height: 180px;
     }
 
 }
