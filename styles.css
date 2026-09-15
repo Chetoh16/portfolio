@@ -1,3 +1,9 @@
+/* 
+    Explicitly forces any element with the hidden attribute to disappear. Helps with filtering.
+*/
+[hidden] {
+    display: none !important;
+}
 
 /* Define variables so that they can be reused throughout 
 
