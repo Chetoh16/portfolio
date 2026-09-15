@@ -1,0 +1,12 @@
+
+
+/*  --- ALTERNATING SECTION BACKGROUNDS --- */
+.bg-black {
+    background-color: var(--ink);
+    color: var(--text);
+}
+
+.bg-white {
+    background-color: #ffffff;
+    color: #08080a;
+}
