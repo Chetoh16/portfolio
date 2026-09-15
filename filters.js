@@ -1,6 +1,7 @@
 const projectGrid = document.querySelector(".project-grid");
 const projectCards = projectGrid.querySelectorAll(".project-card");
 const filterButtons = document.querySelectorAll(".filter-button");
+const projectCount = document.querySelector(".project-count");
 
 const filterState = {
     type: "all",
@@ -8,6 +9,8 @@ const filterState = {
 };
 
 function applyFilters() {
+    let visibleProjects = 0;
+
     projectCards.forEach(card => {
         const matchesType =
             filterState.type === "all" ||
@@ -17,8 +20,16 @@ function applyFilters() {
             filterState.language === "all" ||
             card.dataset.language === filterState.language;
 
-        card.hidden = !(matchesType && matchesLanguage);
+        const visible = matchesType && matchesLanguage;
+
+        card.hidden = !visible;
+
+        if (visible) {
+            visibleProjects++;
+        }
     });
+
+    projectCount.textContent = `${visibleProjects} projects`;
 }
 
 filterButtons.forEach(button => {
