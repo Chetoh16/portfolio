@@ -6,29 +6,17 @@ const filterState = {
     language: "all"
 };
 
-function filterByType(type) {
+function applyFilters() {
     projectCards.forEach(card => {
-        const cardType = card.dataset.type;
+        const matchesType =
+            filterState.type === "all" ||
+            card.dataset.type === filterState.type;
 
-        if (type === "all" || cardType === type) {
-            card.hidden = false;
-        } else {
-            card.hidden = true;
-        }
+        const matchesLanguage =
+            filterState.language === "all" ||
+            card.dataset.language === filterState.language;
+
+        card.hidden = !(matchesType && matchesLanguage);
     });
 }
-
-function filterByLanguage(language) {
-    projectCards.forEach(card => {
-        const cardLanguage = card.dataset.language;
-
-        if (language === "all" || cardLanguage === language) {
-            card.hidden = false;
-        } else {
-            card.hidden = true;
-        }
-    });
-}
-
-filterByLanguage("react");
 
