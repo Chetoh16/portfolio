@@ -180,17 +180,36 @@ img {
     margin-top: 32px;
 }
 
-.hero-actions a {
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 20px;
-    border: 1px solid var(--line-strong);
+    border: 1px solid transparent;
     font-size: 14px;
+    transition: 0.2s ease;
 }
 
-.hero-actions a:hover {
+.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hi);
+    border-color: var(--accent-hi);
+}
+
+.btn-outline {
+    border-color: var(--line-strong);
+    color: var(--text);
+}
+
+.btn-outline:hover {
     border-color: var(--accent);
     color: var(--accent);
 }
-
 
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
