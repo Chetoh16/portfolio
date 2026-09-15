@@ -144,6 +144,53 @@ img {
     background: var(--surface);
 }
 
+.availability {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+
+    /* On a large monitor it can approach 88px, while on a smaller screen it won't become smaller than 48px.*/
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+}
+
+.hero-degree {
+    margin-top: 24px;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.hero-actions a {
+    padding: 12px 20px;
+    border: 1px solid var(--line-strong);
+    font-size: 14px;
+}
+
+.hero-actions a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
 
 
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
