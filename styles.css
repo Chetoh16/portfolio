@@ -147,14 +147,15 @@ img {
 .availability {
     display: inline-block;
     margin-bottom: 24px;
-    color: var(--accent);
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.12em;
 }
 
 .hero h1 {
-
     /* On a large monitor it can approach 88px, while on a smaller screen it won't become smaller than 48px.*/
     font-size: clamp(48px, 7vw, 88px);
     line-height: 0.95;
