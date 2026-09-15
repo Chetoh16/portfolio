@@ -220,6 +220,29 @@ img {
     color: var(--accent);
 }
 
+.sect-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 16px;
+}
+
+.sect-title-row h2 {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.sect-index {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+
+
 
 
 /* --- MEDIA QUERIES --- */
