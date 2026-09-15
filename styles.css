@@ -357,6 +357,36 @@ img {
     transition: color 0.2s ease;
 }
 
+/* --- PROJECT FILTERING --- */
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.filter-button {
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    border-color: var(--line-strong);
+    color: var(--text);
+}
+
+.filter-button.active {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+
+
 /* --- EXPERIENCE --- */
 .experience-list {
     display: flex;

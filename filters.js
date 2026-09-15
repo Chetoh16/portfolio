@@ -1,5 +1,6 @@
 const projectGrid = document.querySelector(".project-grid");
 const projectCards = projectGrid.querySelectorAll(".project-card");
+const filterButtons = document.querySelectorAll(".filter-button");
 
 const filterState = {
     type: "all",
@@ -20,3 +21,16 @@ function applyFilters() {
     });
 }
 
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterState.type = button.dataset.filterType;
+
+        filterButtons.forEach(button => {
+            button.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        applyFilters();
+    });
+});
