@@ -34,18 +34,20 @@
                     ← Back to projects
                 </a>
 
-                <p class="case-study-type">
+                <p class="case-study-type" id="project-type">
                     UNIVERSITY PROJECT
                 </p>
 
-                <h1>NHS Health Data Visualisation</h1>
+                <h1 id="project-title">
+                    NHS Health Data Visualisation
+                </h1>
 
-                <p class="case-study-intro">
-                    An interactive visualisation of NHS hospital admissions
-                    data, built with React and D3.js.
+                <p class="case-study-intro" id="project-description">
+                    An interactive visualisation of NHS hospital admissions data,
+                    built with React and D3.js.
                 </p>
 
-                <div class="case-study-tags">
+                <div class="case-study-tags" id="project-tags">
                     <span>React</span>
                     <span>D3.js</span>
                     <span>JavaScript</span>
@@ -55,29 +57,17 @@
 
                     <section>
                         <h2>Overview</h2>
-
-                        <p>
-                            This project explored how NHS hospital admissions
-                            data could be presented through interactive
-                            visualisations.
-                        </p>
+                        <p id="project-overview"></p>
                     </section>
 
                     <section>
                         <h2>My role</h2>
-
-                        <p>
-                            I lead the team to design and develop
-                            the visualisation system.
-                        </p>
+                        <p id="project-role"></p>
                     </section>
 
                     <section>
                         <h2>Technologies</h2>
-
-                        <p>
-                            React, JavaScript, D3.js and Git.
-                        </p>
+                        <p id="project-technologies"></p>
                     </section>
 
                 </div>
@@ -87,11 +77,6 @@
 
     </main>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const project = params.get("project");
-
-        console.log(project);
-    </script>
+    <script src="project-data.js"></script>
 </body>
 </html>
