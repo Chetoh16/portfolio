@@ -79,6 +79,17 @@ img {
     max-width: 100%;
 }
 
+/* Highlights buttons for keyboard navigation */
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
 .wrap {
     width: 100%;
     max-width: var(--max);
