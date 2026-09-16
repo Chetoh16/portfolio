@@ -87,5 +87,11 @@
 
     </main>
 
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const project = params.get("project");
+
+        console.log(project);
+    </script>
 </body>
 </html>
