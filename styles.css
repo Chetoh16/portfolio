@@ -540,6 +540,25 @@ img {
 }
 
 
+/* --- ACCESSIBILITY --- */
+
+/* 
+    If the user has requested reduced motion, disable smooth scrolling and animations/transitions. 
+*/
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
 /*  --- ALTERNATING SECTION BACKGROUNDS --- */
 .section {
     padding: 100px 0;
