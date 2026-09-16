@@ -31,6 +31,7 @@
     --accent-dim: #8f1828;
 
     --max: 1180px;
+    --nav-h: 57px;  
 }
 
 
@@ -42,13 +43,14 @@
 
 html {
     scroll-behavior: smooth;
+    background: var(--ink);
 }
 
 body {
     margin: 0;
     background: var(--ink);
     color: var(--text);
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.5;
 }
 

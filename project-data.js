@@ -64,3 +64,17 @@ if (project) {
         tags.appendChild(element);
     });
 }
+
+if (!project) {
+    document.querySelector("main").innerHTML = `
+        <div class="wrap">
+            <h1>Project not found</h1>
+            <p>
+                The project you're looking for doesn't exist.
+            </p>
+            <a href="portfolio.html#projects">
+                Back to projects
+            </a>
+        </div>
+    `;
+}
