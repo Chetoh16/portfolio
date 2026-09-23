@@ -447,6 +447,104 @@ img {
     font-size: 14px;
 }
 
+/* --- FOOTER --- */
+
+footer {
+    border-top: 1px solid #d1d1d1;
+    padding: 64px 0 36px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 40px;
+
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.footer-label {
+    margin-bottom: 10px;
+
+    color: #666;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.footer-content h2 {
+    color: var(--ink);
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.footer-content > a {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 11px 20px;
+
+    background: var(--accent);
+    border: 1px solid var(--accent);
+
+    color: #fff;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.footer-content > a:hover {
+    background: var(--accent-hi);
+    border-color: var(--accent-hi);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 24px;
+}
+
+.footer-bottom p {
+    color: #666;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #666;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+
+    transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+
 
 /* --- DETAILS (PROJECTS ETC.) --- */
 .case-study {
@@ -592,6 +690,7 @@ img {
     }
 }
 
+
 /* --- NARROWER MOBILE LAYOUT --- */
 @media (max-width: 600px) {
     .wrap {
@@ -645,6 +744,7 @@ img {
         font-size: clamp(40px, 13vw, 60px);
     }
 }
+
 
 /* --- ACCESSIBILITY --- */
 
