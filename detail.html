@@ -80,58 +80,57 @@
         </div>
     </nav>
 
-<main>
+    <main>
 
-    <section class="case-study">
-        <div class="wrap">
+        <section class="case-study section bg-black">
 
-            <a href="portfolio.html#projects" class="back-link">
-                ← Back to projects
-            </a>
+            <div class="wrap">
 
-            <p class="case-study-type" id="project-type">
-                UNIVERSITY PROJECT
-            </p>
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <a href="portfolio.html">Portfolio</a>
+                    <span class="breadcrumb-separator" aria-hidden="true">/</span>
+                    <a href="portfolio.html#projects">Projects</a>
+                    <span class="breadcrumb-separator" aria-hidden="true">/</span>
+                    <span class="breadcrumb-current" id="breadcrumb-current" aria-current="page"></span>
+                </nav>
 
-            <h1 id="project-title">
-                NHS Health Data Visualisation
-            </h1>
+                <p class="case-study-type" id="project-type"></p>
 
-            <p class="case-study-intro" id="project-description">
-                An interactive visualisation of NHS hospital admissions data,
-                built with React and D3.js.
-            </p>
+                <h1 id="project-title"></h1>
 
-            <div class="case-study-tags" id="project-tags">
-                <span>React</span>
-                <span>D3.js</span>
-                <span>JavaScript</span>
+                <p class="case-study-intro" id="project-description"></p>
+
+                <div class="case-study-tags" id="project-tags"></div>
+
+                <div class="case-study-actions" id="project-links"></div>
+
+                <div class="case-study-content">
+
+                    <section>
+                        <h2>Overview</h2>
+                        <p id="project-overview"></p>
+                    </section>
+
+                    <section>
+                        <h2>My role</h2>
+                        <p id="project-role"></p>
+                    </section>
+
+                    <section>
+                        <h2>Technologies</h2>
+                        <p id="project-technologies"></p>
+                    </section>
+
+                </div>
+
+                <a href="portfolio.html#projects" class="back-link">← Back to projects</a>
+
             </div>
 
-            <div class="case-study-content">
+        </section>
 
-                <section>
-                    <h2>Overview</h2>
-                    <p id="project-overview"></p>
-                </section>
+    </main>
 
-                <section>
-                    <h2>My role</h2>
-                    <p id="project-role"></p>
-                </section>
-
-                <section>
-                    <h2>Technologies</h2>
-                    <p id="project-technologies"></p>
-                </section>
-
-            </div>
-
-        </div>
-    </section>
-
-</main>
-
-<script src="project-data.js"></script>
+    <script src="project-data.js"></script>
 </body>
 </html>
