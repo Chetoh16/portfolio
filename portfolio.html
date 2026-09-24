@@ -256,10 +256,12 @@
                     The <article> HTML element represents a self-contained composition in a document, page, application, or site, 
                     which is intended to be independently distributable or reusable
                 -->
-                <article class="project-card" data-type="university" data-language="react">
-                    <div class="project-visual">
+                <article class="project-card" data-type="university" data-language="javascript react d3">
+
+                    <a class="project-visual" href="detail.html?project=nhs-dataviz">
                         <span>HAPCA</span>
-                    </div>
+                        <span class="project-live">LIVE</span>
+                    </a>
 
                     <div class="project-body">
                         <p class="project-type">UNIVERSITY PROJECT</p>
@@ -276,17 +278,21 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="detail.html?project=nhs-dataviz">View project</a>
-                            <a href="#">GitHub</a>
+                            <!-- TODO: replace # with the deployed URL -->
+                            <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer">Live app</a>
+                            <a href="detail.html?project=nhs-dataviz">Case study</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
                 </article>
 
 
-                <article class="project-card" data-type="university" data-language="react">
-                    <div class="project-visual">
+                <article class="project-card" data-type="university personal" data-language="javascript react supabase">
+
+                    <a class="project-visual" href="detail.html?project=higher-or-lower">
                         <span>HIGHER / LOWER</span>
-                    </div>
+                        <span class="project-live">LIVE</span>
+                    </a>
 
                     <div class="project-body">
                         <p class="project-type">WEB GAME</p>
@@ -303,44 +309,54 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="detail.html?project=higher-or-lower">View project</a>
-                            <a href="#">GitHub</a>
+                            <!-- TODO: replace # with the deployed URL -->
+                            <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer">Live app</a>
+                            <a href="detail.html?project=higher-or-lower">Case study</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
+
                 </article>
 
 
-                <article class="project-card" data-type="open-source" data-language="react">
-                    <div class="project-visual">
+                <article class="project-card" data-type="open-source personal" data-language="javascript react supabase">
+
+                    <a class="project-visual" href="detail.html?project=watching-you">
                         <span>WATCHING YOU</span>
-                    </div>
+                        <span class="project-live">LIVE</span>
+                    </a>
 
                     <div class="project-body">
                         <p class="project-type">PERSONAL PROJECT</p>
                         <h3>Watching You</h3>
                         <p>
-                            An interactive web project exploring user interaction,
-                            visual presentation and frontend development.
+                            A full-stack movie watchlist app with search, favouriting
+                            and shareable public lists.
                         </p>
 
                         <div class="project-tags">
+                            <span>React</span>
+                            <span>Supabase</span>
                             <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
                         </div>
 
                         <div class="project-actions">
-                            <a href="#">View project</a>
-                            <a href="#">GitHub</a>
+                            <!-- TODO: replace # with the deployed URL -->
+                            <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer">Live app</a>
+                            <a href="detail.html?project=watching-you">Case study</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
+
                 </article>
 
 
-                <article class="project-card" data-type="ai" data-language="python">
-                    <div class="project-visual">
+                <!-- Not deployed, so this card has no .project-live badge and no "Live app" link -->
+                <article class="project-card" data-type="ai personal" data-language="python">
+
+                    <a class="project-visual" href="detail.html?project=pain-detector">
                         <span>PAIN DETECTOR</span>
-                    </div>
+                    </a>
 
                     <div class="project-body">
                         <p class="project-type">AI PROJECT</p>
@@ -352,17 +368,23 @@
 
                         <div class="project-tags">
                             <span>Python</span>
-                            <span>Machine Learning</span>
+                            <span>MediaPipe</span>
+                            <span>OpenCV</span>
                         </div>
 
                         <div class="project-actions">
-                            <a href="#">View project</a>
-                            <a href="#">GitHub</a>
+                            <a href="detail.html?project=pain-detector">Case study</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
+
                 </article>
 
             </div>
+
+            <p class="no-results" hidden>
+                No projects match those filters. Try widening one of them.
+            </p>
 
         </div>
 
