@@ -139,19 +139,32 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 28px;
+    align-items: center;
+    gap: 22px;
+
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .nav-links a {
+    display: flex;
+    align-items: center;
+
     color: var(--muted);
     font-size: 14px;
+
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
     color: var(--accent);
+}
+
+/* Social icons sit in the same list as the Contact link */
+.nav-social svg {
+    width: 18px;
+    height: 18px;
 }
 
 .hero {
