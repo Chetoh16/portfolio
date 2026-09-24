@@ -201,16 +201,54 @@
 
             <div class="sect-title-row">
                 <h2>Projects</h2>
-                <span class="sect-index">01</span>
+                <span class="sect-meta project-count" aria-live="polite"></span>
             </div>
 
             <div class="project-filters">
-                <button class="filter-button active" data-filter-type="all" aria-pressed="true">All</button>
-                <button class="filter-button" data-filter-type="university" aria-pressed="false">University</button>
-                <button class="filter-button" data-filter-type="personal" aria-pressed="false">Personal</button>
-                <button class="filter-button" data-filter-type="ai" aria-pressed="false">AI</button>
+                <button
+                    class="filter-toggle"
+                    aria-expanded="false"
+                    aria-controls="filter-panel"
+                >
+                    <span class="filter-icon" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    Filter
+                </button>
 
-                <span class="project-count" aria-live="polite"></span>
+                <div class="filter-panel" id="filter-panel" hidden>
+
+                    <div class="filter-field">
+                        <label for="filter-type">PROJECT TYPE</label>
+                        <select id="filter-type">
+                            <option value="all">All types</option>
+                            <option value="university">University project</option>
+                            <option value="personal">Personal project</option>
+                            <option value="open-source">Open source</option>
+                            <option value="ai">AI</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-field">
+                        <label for="filter-language">LANGUAGE / STACK</label>
+                        <select id="filter-language">
+                            <option value="all">All languages</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="react">React</option>
+                            <option value="d3">D3.js</option>
+                            <option value="supabase">Supabase</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-panel-footer">
+                        <button class="filter-reset" type="button">Reset filters</button>
+                    </div>
+
+                </div>
+
             </div>
 
             <div class="project-grid">
